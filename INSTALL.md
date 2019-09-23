@@ -105,14 +105,15 @@ sudo apt-get install bcc-tools libbcc-examples linux-headers-$(uname -r)
 
 ## Fedora - Binary
 
-Ensure that you are running a 4.2+ kernel with `uname -r`. If not, install a 4.2+ kernel from
-http://alt.fedoraproject.org/pub/alt/rawhide-kernel-nodebug, for example:
+### Fedora 30 and newer
+As of Fedora 30, bcc binaries are available in the standard repository.
+You can install them via
 
 ```bash
-sudo dnf config-manager --add-repo=http://alt.fedoraproject.org/pub/alt/rawhide-kernel-nodebug/fedora-rawhide-kernel-nodebug.repo
-sudo dnf update
-# reboot
+sudo dnf install bcc
 ```
+
+### Fedora 29 and older
 
 **Nightly Packages**
 
